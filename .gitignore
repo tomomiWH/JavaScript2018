@@ -59,3 +59,13 @@ typings/
 
 # next.js build output
 .next
+
+# workspace
+*~
+.DS_Store
+Thumbs.db
+.project
+.vscode
+.idea
+.sublime*
+/atom-shell/

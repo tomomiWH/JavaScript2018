@@ -1,28 +1,24 @@
 {
   "name": "javascript2018",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Repo for the Albany Can Code Course: JavaScript for the New Back End",
   "scripts": {
     "test": "mocha ./test/**/*-test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlbanyCanCode/JavaScript2018.git"
+    "url": "git+https://github.com/AlbanyCanCodeCourses/JavaScript2018.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "AlbanyCanCode",
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-arrays": "^2.0.0",
     "mocha": "^5.2.0",
-    "sinon": "^6.1.0"
-  },
-  "dependencies": {
+    "sinon": "^6.1.0",
     "sinon-chai": "^3.2.0"
   },
   "bugs": {
-    "url": "https://github.com/AlbanyCanCode/JavaScript2018/issues"
+    "url": "https://github.com/AlbanyCanCodeCourse/JavaScript2018/issues"
   },
-  "homepage": "https://github.com/AlbanyCanCode/JavaScript2018#readme"
+  "homepage": "https://github.com/AlbanyCanCodeCourse/JavaScript2018#readme"
 }

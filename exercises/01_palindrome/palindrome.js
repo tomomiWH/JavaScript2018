@@ -5,3 +5,7 @@
  * @return {Boolean}
  */
 function isPalindrome(string) {}
+
+module.exports = {
+  isPalindrome
+};

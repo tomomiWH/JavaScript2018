@@ -5,6 +5,10 @@
  the parameter num will be any number from 1 to 1000. 
  */
 
-function SimpleAdding(num) {  
-  return num      
+function simpleAdding(num) {
+  return num;
 }
+
+module.exports = {
+  simpleAdding
+};

@@ -69,3 +69,6 @@ Thumbs.db
 .idea
 .sublime*
 /atom-shell/
+
+# misc
+package-lock.json

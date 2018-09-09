@@ -1,6 +1,6 @@
 # JavaScript for the New Back End
 
-**Albany Can Code Courses**
+**Albany Can Code Course**
 
 **Fall 2018**
 
@@ -12,12 +12,12 @@ You will submit your assignments by doing pull requests. In order to do pull req
 git clone git@github.com:YOUR-USERNAME/JavaScript2018.git
 ```
 
-Add the original repository as a remote to your forked repository:
+Add the original repository as a remote to your forked repository to submit your work:
 
 ```shell
 cd into/cloned/fork-repo
-git remote add upstream git://github.com/AlbanyCanCode/JavaScript2018.git
-git fetch upstream master.
+git remote add upstream git://github.com/AlbanyCanCodeCourses/JavaScript2018.git
+git fetch upstream master
 ```
 
 ## Resources:

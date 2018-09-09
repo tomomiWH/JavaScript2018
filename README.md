@@ -22,4 +22,5 @@ git fetch upstream master
 
 ## Resources:
 
+Our class syllabus https://docs.google.com/document/d/1MSUpw2dkVQRboYcomshuBCort_xVjVpiYLu9vfK49pU/edit
 Slides are available at https://slides.com/jamaltaylor

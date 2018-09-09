@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Repo for the Albany Can Code Course: JavaScript for the New Back End",
   "scripts": {
-    "test": "mocha ./test/**/*-test.js"
+    "test": "mocha",
+    "testAll": "mocha ./test/**/*-test.js"
   },
   "repository": {
     "type": "git",

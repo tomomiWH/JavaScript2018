@@ -17,7 +17,7 @@ Add the original repository as a remote to your forked repository to submit your
 ```shell
 cd into/cloned/fork-repo
 git remote add upstream git://github.com/AlbanyCanCodeCourses/JavaScript2018.git
-git fetch upstream
+git fetch upstream master
 ```
 
 ## Resources:

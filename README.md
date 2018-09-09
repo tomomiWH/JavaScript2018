@@ -1,6 +1,6 @@
 # JavaScript for the New Back End
 
-**Albany Can Code Course**
+**Albany Can Code Courses**
 
 **Fall 2018**
 
@@ -17,7 +17,7 @@ Add the original repository as a remote to your forked repository:
 ```shell
 cd into/cloned/fork-repo
 git remote add upstream git://github.com/AlbanyCanCode/JavaScript2018.git
-git fetch upstream
+git fetch upstream master.
 ```
 
 ## Resources:

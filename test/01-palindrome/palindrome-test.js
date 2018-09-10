@@ -9,11 +9,9 @@ describe('testing a word if it is a palidrome', () => {
     const eyeResult = isPalindrome('eye');
     const notAPalindrome = isPalindrome('not a palindrome');
     const nope = isPalindrome('nope');
-    const shouldBeTrue = isPalindrome('0_0(: /- :) 0–0');
 
     expect(eyeResult).to.be.equal(true);
     expect(notAPalindrome).to.be.equal(false);
     expect(nope).be.equal(false);
-    expect(shouldBeTrue).be.equal(true);
   });
 });

@@ -4,7 +4,15 @@
  * @param  {[string]}  string
  * @return {Boolean}
  */
-function isPalindrome(str) {}
+function isPalindrome(str) {
+  return (
+    str ===
+    str
+      .split('')
+      .reverse()
+      .join('')
+  );
+}
 
 module.exports = {
   isPalindrome

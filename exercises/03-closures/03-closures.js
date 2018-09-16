@@ -11,18 +11,18 @@
  *
  * @example (yours might not be like this, since the answer is random every time):
  *
- *  var game = guessingGame(5)
- *  game(1) // "You're too low!"
- *  game(8) // "You're too high!"
- *  game(5) // "You're too low!"
- *  game(7) // "You got it!"
- *  game(1) // "You are all done playing!"
+ *  var guessRound1 = guessingGame(5)
+ *  guessRound1(1) // "You're too low!"
+ *  guessRound1(8) // "You're too high!"
+ *  guessRound1(5) // "You're too low!"
+ *  guessRound1(7) // "You got it!"
+ *  guessRound1(1) // "You are all done playing!"
  *
- *  var game2 = guessingGame(3)
- *  game2(5) // "You're too low!"
- *  game2(3) // "You're too low!"
- *  game2(1) // "No more guesses the answer was 0"
- *  game2(1) // "You are all done playing!"
+ *  var guessRound2 = guessingGame(3)
+ *  guessRound2(5) // "You're too low!"
+ *  guessRound2(3) // "You're too low!"
+ *  guessRound2(1) // "No more guesses the answer was 0"
+ *  guessRound2(1) // "You are all done playing!"
  */
 function guessingGame() {}
 

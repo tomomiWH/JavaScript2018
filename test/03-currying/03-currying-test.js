@@ -4,7 +4,7 @@ const expect = chai.expect;
 chai.use(require("sinon-chai"));
 const {
   specialMultiply
-} = require("./../../exercises/02-currying/02-currying");
+} = require("./../../exercises/03-currying/03-currying");
 
 describe("testing the functionality of closures", () => {
   it("should multiply two arguments and return the value", () => {

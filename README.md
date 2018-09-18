@@ -22,11 +22,15 @@ git fetch upstream master
 
 At any point, if you see the message "Please tell me who you are" in your command line output, you will need to setup your command line to use your github account. Follow the instruction underneath where it says "Run", replacing "youremail@example.com" and "Your Name" with your information.
 
-Whenever you are ready to submit your work, commit your changes and push to the original class repository. You will need to repeat this step every time you submit an assignment.
+#### On Making Pull Requests
+
+Whenever you are ready to submit your work, commit your changes and push to the your forked repository.
 
 ```shell
-git push origin remote
+git push origin master
 ```
+
+Follow the guide [Creating a pull request from a fork](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) to make the pull request. The "original repository you created your fork from" that the guide refers to in Step 1 is this repository.
 
 ## Resources:
 

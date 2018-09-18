@@ -22,7 +22,9 @@ Examples:
     removeVowels('ZZZZZZ') // ('zzzzzz')
 */
 
-function removeVowels(str) {}
+function removeVowels(str) {
+  console.log('blah');
+}
 
 module.exports = {
   filter,

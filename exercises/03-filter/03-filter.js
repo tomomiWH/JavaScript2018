@@ -1,17 +1,20 @@
-/*** Write Filter from scratch
- * The function should accept an array and a callback
- * The function should return callback,index, and array
+/**
+ * Recreate the filter function
+ * @see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+ * @param {array} arr
+ * @param {function} callback
+ * @returns {array} new array
  */
-
 function filter(arr, callback) {}
 
-/*
-Write a function called onlyEvenValues which accepts an array and returns a new array with only the even values in the array passed to the function
-Examples:
-    onlyEvenValues([1,2,3]) // [2]
-    onlyEvenValues([5,1,2,3,10]) // [2,10]
-*/
-
+/**
+ * Find and return only the even numbers in an array
+ * @param {array} arr
+ * @returns {array} a new array that only includes the even numbers
+ * @example
+ *   onlyEvenValues([1,2,3]) // [2]
+ *   onlyEvenValues([5,1,2,3,10]) // [2,10]
+ */
 function onlyEvenValues(arr) {}
 
 /*
@@ -21,7 +24,15 @@ Examples:
     removeVowels('TIM') // ('tm')
     removeVowels('ZZZZZZ') // ('zzzzzz')
 */
-
+/**
+ * Remove all vowels from within a string
+ * @param {string} str
+ * @returns {string} string with the vowels removed
+ * @example
+ *  removeVowels('Elie') // ('l')
+ *  removeVowels('TIM') // ('tm')
+ *  removeVowels('ZZZZZZ') // ('zzzzzz')
+ */
 function removeVowels(str) {}
 
 module.exports = {

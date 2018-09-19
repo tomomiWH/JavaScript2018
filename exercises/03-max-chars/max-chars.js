@@ -6,7 +6,26 @@
  * maxChar("aaaabc"); // a
  */
 
-function maxChars(string) {}
+function maxChars(string) {
+  var str = string;
+  var words = str.split(' '); //split str into array returns words
+  var oneChar = str.split(''); //spplit str into returns char
+
+  
+  var findLetters = {};
+  var maxLetter = '';
+
+//loop through letters of string
+for (var i = 0; i < words.length; i++)
+{
+  var result = words[i];
+
+}
+
+console.log(maxChars('Hello World'));
+return str;
+
+}
 
 module.exports = {
   maxChars

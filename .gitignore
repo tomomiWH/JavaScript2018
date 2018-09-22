@@ -66,6 +66,7 @@ typings/
 Thumbs.db
 .project
 .vscode
+*.code*
 .idea
 .sublime*
 /atom-shell/

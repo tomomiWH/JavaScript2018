@@ -21,6 +21,7 @@ describe("testing filter Array method", () => {
         return item;
       }
     });
+    console.log(notCat)
     expect(arrIndex).to.be.equalTo([0, 1, 2]);
     expect(arrTest).to.be.equalTo(["dog", "human", "cat"]);
     expect(notCat).to.be.equalTo(["dog", "human"]);

@@ -5,7 +5,20 @@
  * @param {function} callback
  * @returns {array} new array
  */
-function map(arr, callback) {}
+
+function map(arr, callback) {
+  var newarray = [];
+  arr.forEach(function(item, index){
+    callback(item, index, arr); //retuning all parameters 
+    newarray.push(item);
+  });
+  return newarray;
+}
+
+// Var numbers = [3,5 ].filter(function(number, index){
+//   Return number % 5 === 0;
+//   })
+  
 
 /**
  * Multiplies each vvalue in an array by two

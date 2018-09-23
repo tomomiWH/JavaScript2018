@@ -5,8 +5,16 @@
  * @param {function} callback
  * @returns {array} new array
  */
-function filter(arr, callback) {}
-
+function filter(arr, callback) {
+  var newarray = [];
+  arr.forEach(function(item, index){
+   // callback(newarray, index, arr)
+     if (callback(item, index, arr))
+     newarray.push(item);
+      //newarray.push(callback(newarray, index, arr)); 
+  });
+    return newarray;
+}
 /**
  * Find and return only the even numbers in an array
  * @param {array} arr
@@ -15,7 +23,13 @@ function filter(arr, callback) {}
  *   onlyEvenValues([1,2,3]) // [2]
  *   onlyEvenValues([5,1,2,3,10]) // [2,10]
  */
-function onlyEvenValues(arr) {}
+function onlyEvenValues(arr) {
+   var newarray= [];
+   arr.forEach(function(item, index){
+   if(item % 2 == 0)
+   });
+   
+}
 
 /*
 Write a function called removeVowels which accepts a string and returns a new string with all of the vowels (both uppercased and lowercased) removed. Every character in the new string should be lowercased.

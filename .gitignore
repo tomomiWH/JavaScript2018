@@ -65,7 +65,8 @@ typings/
 .DS_Store
 Thumbs.db
 .project
-.vscode
+.vscode/*
+!/.vscode/launch.json
 *.code*
 .idea
 .sublime*

@@ -24,9 +24,23 @@
         }).map(function(val){
             return val *2;
         })
-    }
+    })
 
 */
+
+/*** Refactor this code so that it returns a name using the ES2015 arrow functions.
+ * let sayNameLaterObj = {
+    name: "Jamal",
+    sayLater: function() {
+        setTimeout(function(){
+          console.log(this.name)
+        },1000)
+    }
+};
+obj.sayLater();
+ * 
+ * 
+ */
 
 module.exports = {
   add,

@@ -8,7 +8,7 @@ const {
   add,
   tripleAndFilter,
   doubleOddNumbers
-} = require("../../exercises/05-arrow-functions/05-arrow-functions");
+} = require("../../exercises/06-arrow-functions/arrow-functions");
 
 describe("ES6 arrow functions", () => {
   it("it should use the arrow functions and add to variables and return the value", () => {

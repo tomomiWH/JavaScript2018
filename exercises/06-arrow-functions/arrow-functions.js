@@ -43,6 +43,21 @@ function doubleOddNumbers(arr) {
     });
 }
 
+/**
+ * Refactor the following to use ES6 arrow syntax and let declarations.
+ * Make sure your refactored function is still called "sayNameLaterObj".
+ * Sorry, this does not have a unit test. For JSBin,
+ * @see https://jsbin.com/noluxolixe/1/edit?js,console
+ */
+var sayNameLaterObj = {
+  name: "Jamal",
+  sayLater: function() {
+    setTimeout(function() {
+      console.log(this.name);
+    }, 1000);
+  }
+};
+
 module.exports = {
   add,
   tripleAndFilter,

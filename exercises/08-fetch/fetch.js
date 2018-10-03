@@ -19,12 +19,8 @@
 const loadImage = url => {};
 
 /** This function should render an image to the page */
-const renderImageToPage = data => {
-  console.log('here');
-  $('#image').prepend(
-    '<img id="image" src="https://images.dog.ceo/breeds/poodle-toy/n02113624_9550.jpg" />'
-  );
+const renderImageToPage = src => {
+  $("#image").prop("src", src);
 };
 
 renderImageToPage();
-alert('test');

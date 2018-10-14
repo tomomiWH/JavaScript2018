@@ -8,9 +8,9 @@
  */
 
 function fib(n) {
-    return
+  return;
 }
 
 module.exports = {
-    fib
+  fib
 };

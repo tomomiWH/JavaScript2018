@@ -1,6 +1,10 @@
+/**
+ * This is a simple example of state and events in React
+ * When you click on a logo, it disappears
+ */
+
 import React, { Component } from "react";
 import logo from "./logo.svg";
-import "./App.css";
 
 const logos = {
   0: {
@@ -30,6 +34,8 @@ class App extends Component {
             <img
               src={logo}
               alt=""
+              width="200"
+              height="142"
               key={key}
               onClick={() => this.hideJewel(index)}
             />

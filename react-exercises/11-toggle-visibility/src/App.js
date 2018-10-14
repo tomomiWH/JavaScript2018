@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+/***
+ *  As a user, I should be able to click on the button to hide the text.
+ *  Clicking the button a second try unhides the text.
+ *
+ */
+
 class App extends Component {
   state = {
     showText: true

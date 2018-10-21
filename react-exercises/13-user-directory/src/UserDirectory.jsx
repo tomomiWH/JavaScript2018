@@ -4,7 +4,7 @@ import users from "./users";
 
 /**
  * Using events and state with React, get the search bar to work. The search bar should
- * search for for first name, last name, and first name and last name together.
+ * search by first name, last name, and first name and last name together.
  * The search bar should be case insensitive. For a demo,
  * @see https://www.screencast.com/t/h1N9DohcF
  *

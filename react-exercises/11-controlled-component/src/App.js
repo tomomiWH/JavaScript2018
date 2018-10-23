@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Forms from "./components/Forms/Forms";
 
 /***
  *    1) Use defaultProps to set the intital state of the Application.
@@ -11,7 +12,7 @@ import React, { Component } from 'react';
  *      to the child component Forms. Use event.preventDefault  to prevent the form from submitting in the handleSubmission function.
  *      In handleOnChange use defaultProps to determine the casing that will be rendered to the screen.
  *
- *
+ *    **** Note prop -- is passing
  *
  * */
 
@@ -20,15 +21,33 @@ class App extends Component {
     userInput: ''
   };
 
-  handleSubmission = () => {};
+  handleSubmission = (event) => {
+    console.log("testing");
+    event.preventDefault()
+    console.log(this.state.userInput)
+  };
 
-  handleOnChange = () => {};
+  handleOnChange = (event) => {
+    console.log(event.target.value); //getting text to console, use "target"
+    const {casing} = this.props;
+    console.log(casing);
+    this.setState({
+      userInput: casing === 'uppercase' ? event.target.value.toUpperCase() : event.target.value.toLowerCase() 
+    })
+  };
 
   render() {
-    return <div className="App">{this.state.userInput}</div>;
+    return <div className="App">
+    <Forms upperCasing = {this.state.userInput} handleOnChange = {this.handleOnChange} handleSubmission ={this.handleSubmission}/>
+    
+        {this.state.userInput}
+      
+    </div>;
+
   }
 }
 
-App.defaultProps = {};
+App.defaultProps = {casing:'uppercase'}; 
 
 export default App;
+

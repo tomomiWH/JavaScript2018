@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 
 class Forms extends Component {
   render() {
+    console.log(this.props)
     return (
       <div>
-        <form>
-          <textarea type="text" />
+        <form onSubmit={this.props.handleSubmission}>
+          <textarea value={this.props.upperCasing} onChange={this.props.handleOnChange} type="text" />
           <button type="submit">Click Me</button>
         </form>
       </div>

@@ -1,3 +1,4 @@
+import React from 'react';
 /**
  * As a user, I should be able to click on a button named Increment to increment the count
  * As a user, I should be able to click on a button named Decrement to decrement the count
@@ -10,17 +11,39 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: 0 
     };
   }
+
+  increment = (event) =>{
+    this.setState({
+      count: this.state.count + 1
+    })
+  }
+
+  decrement = (event) =>{
+    
+    if (this.state.count===0) return;
+    this.setState({
+      //count: this.count === 0 ? this.state.count: this.state.count -1 
+      count: this.state.count-1
+    })
+  }
+
+  reset = (event) =>{
+    this.setState({count: 0})
+  }
+ 
   render() {
     return (
       <div>
-        <button className="inc">Increment!</button>
-        <button className="dec">Decrement!</button>
-        <button className="reset">Reset</button>
+        <button className="inc" onClick ={this.increment} >Increment!</button>
+        <button className="dec" onClick = {this.decrement} >Decrement!</button>
+        <button className="reset" onClick = {this.reset}>Reset</button>
         <h1>Current Count: {this.state.count}</h1>
       </div>
     );
   }
 }
+
+export default App

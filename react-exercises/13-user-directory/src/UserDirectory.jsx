@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import "./UserDirectory.css";
-import users from "./users";
+//import users from "./users";
+import axios from 'axios';
 
 /**
  * PART I: To be completed at the beginning of class
  *
- * Using events and state with React, get the search bar to work. The search bar should
+ * Using events and state with React, get the search bar to work. 
+ * The search bar should
  * search by first name, last name, and first name and last name together.
  * The search bar should be case insensitive. For a demo,
  * @see https://www.screencast.com/t/h1N9DohcF
@@ -18,9 +20,49 @@ import users from "./users";
  */
 
 class UserDirectory extends Component {
+
   state = {
-    users: users
+    users: [], //set for axios
+    userInput: ""
   };
+
+  search = userInput => {
+    const input = userInput.replace(" ", "");
+    this.setState({
+      users: [].filter(user => {
+        const name = user.name.first + user.name.last;
+        return name.match(input);
+      })
+    });
+  };
+
+  getNames = () => {
+    this.setState({
+      loading: true
+    });
+  axios 
+    .get('https://randomuser.me/api?results=500&inc=name,email,picture')
+    .then(response => {
+      console.log(response);
+      this.setState({
+        users: response.data.results,
+        loading: false
+      });
+    })
+    .catch(error => {
+      this.setState({
+        isError: true
+      });
+    });
+  }
+ 
+
+ componentDidMount(){
+   console.log("test componentDidMount");
+   this.getNames();
+ }
+
+
   render() {
     return (
       <div className="UserDirectory">
@@ -30,6 +72,8 @@ class UserDirectory extends Component {
             placeholder="Search..."
             aria-label="Search"
             className="search"
+            onChange = {e => this.search(e.target.value)}
+
           />
         </div>
         <div className="UserDirectory-users">
